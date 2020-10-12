@@ -5,7 +5,6 @@
     user-select: none;
 }
 
-
 body {
 	background: rgb(60,66,81);
     }
@@ -63,7 +62,6 @@ body, ul, a {
 	background-color: rgba(255,255,255,0.1);
 }
 
-
 .nav__a {
 	text-decoration: none;
 }
@@ -73,7 +71,6 @@ body, ul, a {
 }
 
 /*______________*/
-
 
 .nav__li ul {
 	position: absolute;
@@ -180,8 +177,6 @@ body, ul, a {
 	background-color: rgba(246,250,254);
 }
 
-
-
 /*--------NAV-PROFILE-----------*/
 
 .nav__li .nav__submenu-profile {
@@ -279,7 +274,6 @@ text-decoration: none;
 	background-color: rgba(244,244,244)
 }
 
-
 .nav__submenu-profile-profiles {
 	border-top: 1px solid #ddd;
 	margin: 24px -20px;
@@ -297,7 +291,6 @@ text-decoration: none;
 .nav__profile:hover {
 	background-color: rgba(244,244,244);
 }
-
 
 .nav__profile-username {
 margin: 0 0 0 12px;
@@ -352,8 +345,6 @@ margin-bottom: 0;
 background: rgb(244,244,244);
 }
 
-
-
 /*--------------HOME------------------*/
 
 .home {
@@ -371,7 +362,7 @@ background-repeat: no-repeat;
 height: 92px;
 width: 272px;
 left: calc(50% - 272px/2);
-top: 26%;
+top: 25%;
 position: absolute;
 -webkit-mask-image: url(../img/google-logo.svg);
 background: var(--logo-color);
@@ -381,7 +372,7 @@ background: var(--logo-color);
 	position: absolute;
 	text-align: center;
 	width: 100%;
-	margin-top: 21.5%;
+	top: 45%;
 }
 
 .home__form {
@@ -406,7 +397,7 @@ box-sizing: border-box;
 left: 0;
 opacity: 1;
 position: absolute;
-top: 0;
+top: 30%;
 width: 92%;
 color: #000;
 border: none;
@@ -424,8 +415,6 @@ padding-right: 0;
 	font-size: 15px
 }
 
-
-
 .form__microphone-icon {
 border: 0;
 background: url(../img/google-microfono.svg) no-repeat center;
@@ -438,8 +427,6 @@ margin-top: 11px;
 margin-right: 16px
 }
 
-
-
 /*HOME---ACCESOS DIRECTOS*/
 
 .home__direct-access {
@@ -448,11 +435,9 @@ margin-right: 16px
 	width: 100%;
 }
 
-
 .home__direct-access-row {
 	text-align: center;
 }
-
 
 .direct-access {
 	display: inline-flex;
@@ -467,11 +452,9 @@ margin-right: 16px
 	padding: 5px
 }
 
-
 .direct-access:hover {
 	background-color: rgba(255,255,255,0.12);
 }
-
 
 .direct-access .direct-access__img {
 cursor: pointer;
@@ -500,11 +483,7 @@ border: none;
 	margin-bottom: 6px;
 }
 
-
-
-
 /*-------------VOICE-SEARCH-------------*/
-
 
 .voice-search {
 	position: absolute;
@@ -518,8 +497,6 @@ border: none;
     display: none;
     padding: 0 10vw
 }
-
-
 
 .voice-search__result, .voice-search__animation {
 	height: 100vh;
@@ -553,7 +530,6 @@ border: none;
 	background-color: #f44;
 }
 
-
 .voice-search__microphone-border {
 	position: absolute;
 	height: 180px;
@@ -565,12 +541,9 @@ border: none;
 	box-sizing: content-box;
 }
 
-
-
 .voice-search__microphone-border:hover {
 	border-width: 70px;
 }
-
 
 .voice-search__close-modal {
 	position: absolute;
@@ -598,19 +571,3 @@ border: none;
 		opacity: 0;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
