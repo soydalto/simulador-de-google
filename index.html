@@ -1,308 +1,479 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-	<title>Google</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<meta charset="utf-8">
-</head>
-<body>
-	<div class="voice-search">
-		<div class="voice-search__close-modal">X</div>
-		<div class="voice-search__result">
-			<div class="voice-search__result-text"></div>
+
+	<head>
+	
+		<meta charset="UTF-8" />
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta name="color-scheme" content="dark">
+
+		<link rel="icon" href="img/favicon.ico">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+
+		<meta name="msapplication-TileColor" content="#000000">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+		<link rel="manifest" href="manifest.json?v13">
+	
+		<title> GooS_tav </title>
+	
+		<!-- Custom CSS -->
+	
+		<link rel="stylesheet" type="text/css" href="css/style.css?v75" />
+	</head>
+
+	<body>
+	
+		<div class="voice-search">
+	
+			<div class="voice-search__close-modal"> X </div>
+	
+			<div class="voice-search__result">
+	
+				<div class="voice-search__result-text"></div>
+			</div>
+	
+			<div class="voice-search__animation">
+	
+				<span class="voice-search__microphone-icon fas fa-microphone"></span>
+	
+				<span class="voice-search__microphone-border"></span>
+			</div>
 		</div>
-		<div class="voice-search__animation">
-			<span class="voice-search__microphone-icon fas fa-microphone"></span>
-			<span class="voice-search__microphone-border"></span>
-		</div>
-	</div>
-	<header>
-		<nav class="nav">
-			<ul class="nav__ul">
-				<li class="nav__li nav__li-text"><a href="https://gmail.com" class="nav__a">Gmail</a></li>
-				<li class="nav__li nav__li-text"><a href="https://www.google.com/imghp" class="nav__a">Imágenes</a></li>
-				<li class="nav__li">
-					<svg class="gb_Ue" focusable="false" viewBox="0 0 24 24">
-						<path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
-					</svg>
-				</li>
-				<li class="nav__li nav__li-submenu">
-					<img src="img/logo-user.png" class="nav__profile-img">
+
+		<header>
+
+			<nav class="nav">
+
+				<ul class="nav__ul">
+				
+					<li class="nav__li nav__li-text" title="Buscar">
+				
+							<svg id="form-btn" class="gb_Ue" focusable="false" viewBox="-100 -175 731 731">
+								
+								<path
+									d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+								/>
+							</svg>
+					</li>
+
+					<li id="nav_btn" class="nav__li hidden">
+				
+						<svg class="gb_Ue" focusable="false" viewBox="0 0 24 24">
+				
+							<path
+								d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+							>
+							</path>
+						</svg>
+					</li>
+
+					<li id="nav_btn-list" class="nav__li" title="Sitios">
+				
+						<svg class="gb_Ue" focusable="false" viewBox="-100 -50 650 650">
+				
+							<path
+								d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+							>
+							</path>
+						</svg>
+					</li> 
+
+					<li id="nav_profile_btn" class="nav__li nav__li-submenu" title="Personalización">
+
+						<svg class="gb_Ue" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 34px;">
+							
+							<!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+							
+							<path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+						</svg>
+					</li>
+
 					<ul class="nav__li-submenu-ul">
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-user.png">
-								<p >Cuenta</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-google.png">
-								<p >Busqueda</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-business.png">
-								<p >Business</p>
-							</div>
-						</div>
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-maps.png">
-								<p>Maps</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-youtube.png">
-								<p >YouTube</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-play.png">
-								<p >Play</p>
+
+						<div id="new_site_modal" class="hidden">
+
+							<input id="site_name" placeholder="Nombre del sitio" type="text">
+
+							<br>
+
+							<input id="site_link" placeholder="URL" type="text">
+
+							<br>
+
+							<input id="site_keywords" placeholder="Palabras clave" type="text">
+
+							<br>
+
+							<div style="display: flex;width: 100%;justify-content: space-around;">
+
+								<a id="cancel"  style="padding: 10px 5px;border: 1px solid var(--primary);border-radius: 4px;"> Cancelar </a>
+
+								<a id="cache_site" style="padding: 10px 5px;border: 1px solid var(--primary);border-radius: 4px;"> Añadir </a>
 							</div>
 						</div>
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-noticias.png">
-								<p >Noticias</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-gmail.png">
-								<p >Gmail</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-contactos.png">
-								<p >Contactos</p>
-							</div>
-						</div>
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-drive.png">
-								<p >Drive</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-calendar.png">
-								<p >Calendar</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-traductor.png">
-								<p >Traductor</p>
-							</div>
-						</div>
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-fotos.png">
-								<p >Fotos</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-duo.png">
-								<p >Duo</p>
-							</div>
-							<div class="nav__submenu-element" style="opacity: 0;">
-								<img src="img/logo-google.png">
-								<p></p>
-							</div>
-						</div>
-						<hr class="nav__submenu-element-section-separator">
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-documents.png">
-								<p >Documents</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-sheets.png">
-								<p >Sheets</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-slides.png">
-								<p >Slides</p>
-							</div>
-						</div>
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-books.png">
-								<p>Books</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-blogger.png">
-								<p >Blogger</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-hangouts.png">
-								<p >Hangouts</p>
-							</div>
-						</div>
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-keep.png">
-								<p >Keep</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-jamboard.png">
-								<p >Jamboard</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-classroom.png">
-								<p >Classroom</p>
-							</div>
-						</div>
-						<div class="nav__submenu-element-section">
-							<div class="nav__submenu-element">
-								<img src="img/logo-earth.png">
-								<p >Earth</p>
-							</div>
-							<div class="nav__submenu-element">
-								<img src="img/logo-collections.png">
-								<p >Collections</p>
-							</div>
-							<div class="nav__submenu-element" style="opacity: 0;">
-								<img src="img/logo-google.png">
-								<p></p>
-							</div>
-						</div>
-						<button class="mas-de-google">Mas de Google</button>
 					</ul>
-					<ul class="nav__submenu-profile">
-						<img src="img/logo-user.png">
-						<svg class="gb_nb" enable-background="new 0 0 24 24" focusable="false" height="26" viewBox="0 0 24 24" width="18" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M20 5h-3.17L15 3H9L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 14H4V7h16v12zM12 9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path></svg>
-						<div class="nav__submenu-profile-user-name">Todo Tendencias</div>
-						<div class="nav__submenu-profile-user-mail">ejemplodecorreo@gmail.com</div>
-						<a class="gestionar-cuenta-de-google" href="https://myaccount.google.com/?utm_source=OGB&amp;tab=rk&amp;authuser=0&amp;utm_medium=act" target="_blank">Gestionar tu cuenta de Google</a>
+
+					<ul class="nav__submenu-profile"> <!-- 
+					
+						<img src="img/logo-user.png" />
+					
+						<svg
+							class="gb_nb"
+							enable-background="new 0 0 24 24"
+							focusable="false"
+							height="26"
+							viewBox="0 0 24 24"
+							width="18"
+							xml:space="preserve"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+					
+							<path
+								d="M20 5h-3.17L15 3H9L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 14H4V7h16v12zM12 9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"
+							>
+							</path>
+						</svg>
+						
+						<div class="nav__submenu-profile-user-name"> Todo Tendencias </div>
+						
+						<div class="nav__submenu-profile-user-mail"> ejemplodecorreo@gmail.com </div>
+						
+						<a
+							class="gestionar-cuenta-de-google"
+							href="https://myaccount.google.com/?utm_source=OGB&amp;tab=rk&amp;authuser=0&amp;utm_medium=act"
+							target="_blank"
+							> Gestionar tu cuenta de Google </a
+						>
+						
 						<div class="nav__submenu-profile-profiles">
+						
 							<a class="nav__profile" href="#">
+						
 								<div class="nav__profile-user-image">
-									<img src="img/logo-random-user-1.png">
+						
+									<img src="img/logo-random-user-1.png" />
 								</div>
+						
 								<div class="nav__profile-info">
-									<div class="nav__profile-username">Lucas Dalto</div>
+						
+									<div class="nav__profile-username"> Lucas Dalto </div>
+						
 									<div class="nav__profile-mail">ejemplodecorreo1@gmail.com</div>
 								</div>
 							</a>
+							
 							<a class="nav__profile" href="#">
+							
 								<div class="nav__profile-user-image">
-									<img src="img/logo-random-user-2.png">
+							
+									<img src="img/logo-random-user-2.png" />
 								</div>
+							
 								<div class="nav__profile-info">
+							
 									<div class="nav__profile-username">Pucas Balto</div>
+							
 									<div class="nav__profile-mail">ejemplodecorreo2@gmail.com</div>
 								</div>
 							</a>
+							
 							<a class="nav__profile" href="#">
+							
 								<div class="nav__profile-user-image">
-									<img src="img/logo-random-user-3.png">
+							
+									<img src="img/logo-random-user-3.png" />
 								</div>
+							
 								<div class="nav__profile-info">
+							
 									<div class="nav__profile-username">Tus Asaltos</div>
+							
 									<div class="nav__profile-mail">ejemplodecorreo3@gmail.com</div>
 								</div>
 							</a>
+							
 							<a class="nav__profile" href="#">
+							
 								<div class="nav__profile-user-image">
-									<img src="img/logo-random-user-4.png">
+							
+									<img src="img/logo-random-user-4.png" />
 								</div>
+							
 								<div class="nav__profile-info">
+							
 									<div class="nav__profile-username">Tas mas Alto</div>
+							
 									<div class="nav__profile-mail">ejemplodecorreo4@gmail.com</div>
 								</div>
 							</a>
+							
 							<a class="nav__profile" href="#">
+							
 								<div class="nav__profile-user-image">
-									<img src="img/logo-random-user-5.png">
+							
+									<img src="img/logo-random-user-5.png" />
 								</div>
+							
 								<div class="nav__profile-info">
+							
 									<div class="nav__profile-username">Yosi Mato</div>
+							
 									<div class="nav__profile-mail">ejemplodecorreo5@gmail.com</div>
 								</div>
 							</a>
+							
 							<a class="nav__profile" href="#">
+							
 								<div class="nav__profile-user-image">
-									<img src="img/logo-random-user-6.png">
+							
+									<img src="img/logo-random-user-6.png" />
 								</div>
+							
 								<div class="nav__profile-info">
+							
 									<div class="nav__profile-username">Macri Gato</div>
+							
 									<div class="nav__profile-mail">ejemplodecorreo6@gmail.com</div>
 								</div>
 							</a>
+
 							<a class="nav__profile" href="#">
+
 								<div class="nav__profile-user-image">
-									<svg class="gb_Ab" enable-background="new 0 0 24 24" focusable="false" height="20" viewBox="0 0 24 24" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 7c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4zm6 5H3v-.99C3.2 16.29 6.3 15 9 15s5.8 1.29 6 2v1zm3-4v-3h-3V9h3V6h2v3h3v2h-3v3h-2z"></path></svg>
+								
+									<svg
+										class="gb_Ab"
+										enable-background="new 0 0 24 24"
+										focusable="false"
+										height="20"
+										viewBox="0 0 24 24"
+										width="20"
+										xml:space="preserve"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+									>
+
+										<path d="M9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 7c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4zm6 5H3v-.99C3.2 16.29 6.3 15 9 15s5.8 1.29 6 2v1zm3-4v-3h-3V9h3V6h2v3h3v2h-3v3h-2z"> </path>
+									</svg>
 								</div>
+
 								<div class="nav__profile-info">
+
 									<div class="nav__profile-username black-negrita">Añadir otra cuenta</div>
 								</div>
 							</a>
+
 							<div class="nav__border-top-and-bottom">
-								<a class="cerrar-sesion-button" href="#">Cerrar sesión en todas las cuentas</a>
+
+								<a class="cerrar-sesion-button" href="#"> Cerrar sesión en todas las cuentas </a>
 							</div>
-							<a href="" class="politicas-de-privacidad-button">Políticas de privacidad</a>
-							<a href="" class="condiciones-de-servicio-button">Condiciones de servicio</a>
+
+							<a href="" class="politicas-de-privacidad-button"> Políticas de privacidad </a>
+							
+							<a href="" class="condiciones-de-servicio-button"> Condiciones de servicio </a>
+						</div> -->
+
+						<div id="clock"></div>
+
+						<br>
+
+						<div class="calendar_widget">
+
+							<div id="monthAndYear"></div>
+	
+							<select id="month">
+							
+								<option value="0"> Enero </option>
+							
+								<option value="1"> Febrero </option>
+							
+								<option value="2"> Marzo </option>
+							
+								<option value="3"> Abril </option>
+							
+								<option value="4"> Mayo </option>
+							
+								<option value="5"> Junio </option>
+							
+								<option value="6"> Julio </option>
+							
+								<option value="7"> Agosto </option>
+							
+								<option value="8"> Septiembre </option>
+							
+								<option value="9"> Octubre </option>
+							
+								<option value="10"> Noviembre </option>
+							
+								<option value="11"> Diciembre </option>
+							</select>
+	
+							<input type="number" id="year">
+	
+							<div>
+	
+								<div class="td"> Do </div>
+	
+								<div class="td"> Lu </div>
+	
+								<div class="td"> Ma </div>
+	
+								<div class="td"> Mi </div>
+	
+								<div class="td"> Ju </div>
+	
+								<div class="td"> Vi </div>
+	
+								<div class="td"> Sá </div>
+							</div>
+	
+							<div id="calendar"></div>
 						</div>
+
+						<br>
+
+						<div class="nick_sttng" style="text-align: start;">
+
+							<label for="nick_sttng"> Usuario: </label>
+
+							<input type="text" id="nick_sttng" placeholder="Tu nombre" style="width: 50%;">
+						</div>
+
+						<br>
+
+						<div class="bckgrnd_sttng" style="text-align: start;">
+
+							<label for="bckgrnd_sttng"> Fondo: </label>
+
+							<input type="text" id="bckgrnd_sttng" placeholder="URL de la imagen" style="width: 50%;">
+						</div>
+
+						<br>
+
+						<div class="history_sttng" style="text-align: start;">
+
+							<label for="history_sttng"> Guardar historial </label>
+
+							<input type="checkbox" id="history_sttng" checked="true">
+						</div>
+
+						<br>
+
+						<a id="export_config" class="mas-de-google" style="margin-top: 40px;">
+							
+							Exportar perfil
+						</a>
+
+						<br>
+
+						<label class="mas-de-google" for="import_config"> Importar perfil... </label>
+
+						<br>
+
+						<input id="import_config" class="hidden" type="file">
+
+						<a id="delete_config" class="mas-de-google" style="background: #733;">
+							
+							Borrar perfil
+						</a>
 					</ul>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<div class="home">
-		<div class="home__logo-container">
+				</ul>
+			</nav>
+		</header>
+
+		<div class="home">
+			
+			<div id="home__bckgrnd"></div>
+			
+			<div id="home_img">
+
+				<img>
+			</div>
+
+			<div id="img_mask"></div>
+
+			<!-- home__logo-container starts -->
+
+			<div class="home__logo-containerrr">
+
+				<p style="font-family: 'Poppins', sans-serif;"></p>
+			</div>
+
+			<!-- home__logo-container ends -->
+
+			<div class="home__search-container">
+
+				<form class="home__form hidden">
+
+					<select name="s_engine" id="s_engine" class="form__s_engine-icon">
+
+						<option value="Baidu"> Baidu </option>
+
+						<option value="Duckduckgo"> Duckduckgo </option>
+
+						<option value="Google" selected> Google </option>
+
+						<option value="Qwant"> Qwant </option>
+
+						<option value="Yandex"> Yandex </option>
+
+						<option value="Yandex-r"> Яндекс (Yandex ruso) </option>
+					</select>
+
+					<svg class="gb_Ue fa-search" focusable="false" viewBox="-100 -175 731 731">
+					
+						<path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/>
+					</svg>
+
+					<input autofocus="" type="text" id="google-search" class="google-search" placeholder="Hi stranger! Try searching movies, music, books, or whatever you want..." /> <!-- 
+
+					<a class="form__microphone-icon" type="button" title="Búsqueda por voz"></a> -->
+				</form>
+
+				<div class="results_box_container hidden">
+
+					<div class="results_box"></div>
+				</div>
+			</div>
 		</div>
-		<div class="home__search-container">
-			<form class="home__form" title="Google">
-				<div class="fas fa-search"></div>
-				<input type="text" class="google-search" placeholder="Buscar en Google o escribir una URL">
-				<button class="form__microphone-icon" type="button" title="Búsqueda por voz"></button>
-			</form>
-		</div>
+
 		<div class="home__direct-access">
-			<div class="home__direct-access-row">
-				<div class="direct-access" title="Acceso directo">
-					<iframe src="get-icon.html?url=facebook" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Acceso dir.</div>
-					<div class="direct-access__options"></div>
-				</div>
-				<div class="direct-access" title="Acceso directo">
-					<iframe src="get-icon.html?url=google" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Acceso dir.</div>
-					<div class="direct-access__options"></div>
-				</div>
-				<div class="direct-access" title="Acceso directo">
-					<iframe src="get-icon.html?url=youtube" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Acceso dir.</div>
-					<div class="direct-access__options"></div>
-				</div>
-				<div class="direct-access" title="Acceso directo">
-					<iframe src="get-icon.html?url=twitter" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Acceso dir.</div>
-					<div class="direct-access__options"></div>
-				</div>
-				<div class="direct-access" title="Acceso directo">
-					<iframe src="get-icon.html?url=livecounts" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Acceso dir.</div>
-					<div class="direct-access__options"></div>
-				</div>
-			</div>
-			<div class="home__direct-access-row">
-				<div class="direct-access" title="Acceso directo">
-					<iframe src="get-icon.html?url=facebook" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Acceso dir.</div>
-					<div class="direct-access__options"></div>
-				</div>
-				<div class="direct-access" title="Acceso directo">
-					<iframe src="get-icon.html?url=youtube" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Acceso dir.</div>
-					<div class="direct-access__options"></div>
-				</div>
-				<div class="direct-access" title="Acceso directo">
-					<iframe src="get-icon.html?url=twitter" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Acceso dir.</div>
-					<div class="direct-access__options"></div>
-				</div>
-				<div class="direct-access" title="Añadir acceso directo">
-					<iframe src="get-icon.html?url=add" class="direct-access__img"></iframe>
-					<div class="direct-access__info">Añadir acceso...</div>
-					<div class="direct-access__options"></div>
-				</div>
-			</div>
+
+			<div class="home__direct-access-row"></div>
 		</div>
-	</div>
-	<script src="js/nav.js"></script>
-	<script src="js/search.js"></script>
-	<script src="js/voice-search.js"></script>
-</body>
+
+		<script src="js/nav.js?v126"></script>
+		<script src="js/search.js?v71"></script> <!-- 
+		<script src="js/voice-search.js?v2"></script> -->
+
+		<script>
+			
+			if ('serviceWorker' in navigator) { // Empezar el proceso para la PWA
+
+				navigator.serviceWorker.register('./sw.js', {scope: './'})
+				.then(reg=>console.log( /* 'Registro de SW exitoso', reg */ ))
+				.catch(err => console.warn('Error al trtar de registrar el SW', err));
+			}
+		</script>
+	</body>
 </html>
