@@ -1,11 +1,3 @@
-document.querySelector(".gb_Ue").addEventListener("click",navAction);
-document.querySelector(".nav__li-submenu").addEventListener("click",navProfileAction);
-let zIndex = 20;
-let navClose = true;
-let navProfileClose = true;
-const nav = document.querySelector('.nav__li-submenu-ul');
-const navProfile = document.querySelector(".nav__submenu-profile")
-
 function navAction(){
 	if (navClose == true) {
 		nav.style.display = "block";
@@ -34,4 +26,12 @@ function navProfileAction(){
 		navProfileClose = true;
 	}
 }
+
+document.querySelector(".gb_Ue").addEventListener("click",navAction);
+document.querySelector(".nav__li-submenu").addEventListener("click",navProfileAction);
+let zIndex = 20;
+let navClose = true;
+let navProfileClose = true;
+const nav = document.querySelector('.nav__li-submenu-ul');
+const navProfile = document.querySelector(".nav__submenu-profile")
 
