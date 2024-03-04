@@ -1,3 +1,7 @@
+/* Bueno yo realmente no se de esto
+y tampoco tengo mucho que decir 
+asi que me limitare solamente a hacer
+este comentario :v */
 
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
