@@ -1,18 +1,18 @@
 
-const voiceSearch = document.querySelector(".voice-search");
+const voiceSearc = document.querySelector(".voice-search");
 let microAceptado = false;
 
 const voiceSearchModalOpen = ()=>{
-	voiceSearch.style.display = "flex";
-	voiceSearch.style.animation = "aparecer 0.5s forwards";
+	voiceSearc.style.display = "flex";
+	voiceSearc.style.animation = "aparecer 0.5s forwards";
 	voiceRecognition();
 }
 
 
 const voiceSearchModalClose = () =>{
-	voiceSearch.style.animation = "desaparecer 0.25s forwards";
+	voiceSearc.style.animation = "desaparecer 0.25s forwards";
 	setTimeout(()=>{
-	    voiceSearch.style.display = "none";
+	    voiceSearc.style.display = "none";
 	},250)
 }
 
