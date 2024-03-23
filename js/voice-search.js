@@ -5,7 +5,7 @@ let microAceptado = false;
 const voiceSearchModalOpen = ()=>{
 	voiceSearch.style.display = "flex";
 	voiceSearch.style.animation = "aparecer 0.5s forwards";
-	voiceRecognition();
+	voiceRecognition()
 }
 
 
