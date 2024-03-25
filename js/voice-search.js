@@ -1,21 +1,21 @@
 
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
-
+// Comentario random
 const voiceSearchModalOpen = ()=>{
 	voiceSearch.style.display = "flex";
 	voiceSearch.style.animation = "aparecer 0.5s forwards";
 	voiceRecognition();
 }
 
-
+// Comentario random2
 const voiceSearchModalClose = () =>{
 	voiceSearch.style.animation = "desaparecer 0.25s forwards";
 	setTimeout(()=>{
 	    voiceSearch.style.display = "none";
 	},250)
 }
-
+// Comentario random3
 const voiceRecognition = () =>{
 	if (microAceptado == false) {
 	window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
@@ -36,7 +36,7 @@ const voiceRecognition = () =>{
 }
     recognition.start();
 }
-
+// Comentario random4
 document.querySelector('.form__microphone-icon').addEventListener("click",voiceSearchModalOpen);
 document.querySelector(".voice-search__close-modal").addEventListener("click",voiceSearchModalClose);
 document.querySelector(".voice-search__microphone-border").addEventListener("click",voiceRecognition)
