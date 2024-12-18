@@ -1,12 +1,12 @@
-document.querySelector(".gb_Ue").addEventListener("click",navAction);
-document.querySelector(".nav__li-submenu").addEventListener("click",navProfileAction);
+"use strict";
+
 let zIndex = 20;
 let navClose = true;
 let navProfileClose = true;
 const nav = document.querySelector('.nav__li-submenu-ul');
 const navProfile = document.querySelector(".nav__submenu-profile")
 
-function navAction(){
+const navAction = ()=> {
 	if (navClose == true) {
 		nav.style.display = "block";
 		navClose = false;
@@ -21,7 +21,7 @@ function navAction(){
 }
 
 
-function navProfileAction(){
+const navProfileAction = ()=> {
 	if (navProfileClose == true) {
 		navProfile.style.display = "block";
 		navProfileClose = false;
@@ -35,3 +35,6 @@ function navProfileAction(){
 	}
 }
 
+
+document.querySelector(".gb_Ue").addEventListener("click",navAction);
+document.querySelector(".nav__li-submenu").addEventListener("click",navProfileAction);

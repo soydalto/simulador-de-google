@@ -1,4 +1,6 @@
-function getValue(param) {
+"use strict";
+
+const getValue = param=> {
     let name = param.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     let regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
     results = regex.exec(location.search);
