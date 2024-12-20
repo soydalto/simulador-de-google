@@ -1,7 +1,7 @@
 
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
-
+document.write("Hola solo modifique para poder hacer la leccion");
 const voiceSearchModalOpen = ()=>{
 	voiceSearch.style.display = "flex";
 	voiceSearch.style.animation = "aparecer 0.5s forwards";
