@@ -1,4 +1,7 @@
 
+//Este archivo fue forked por motivos de practica
+
+
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
 
