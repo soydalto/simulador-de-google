@@ -1,4 +1,6 @@
 
+//Agregar comnetarios porque este lenguaje no lo conozco y los cambios del codigo ya los hizo el teacher 
+
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
 
