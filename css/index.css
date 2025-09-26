@@ -8,7 +8,7 @@
 
 body {
 	background: rgb(60,66,81);
-    }
+}
 
 body, ul, a {
 	padding: 0;
@@ -202,7 +202,7 @@ body, ul, a {
 
 .nav__submenu-profile img {
 	width: 84px
-}
+ }
 
 .nav__submenu-profile .gb_nb {
 	position: absolute;
