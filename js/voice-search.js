@@ -1,3 +1,6 @@
+document.querySelector('.form__microphone-icon').addEventListener("click",voiceSearchModalOpen);
+document.querySelector(".voice-search__close-modal").addEventListener("click",voiceSearchModalClose);
+document.querySelector(".voice-search__microphone-border").addEventListener("click",voiceRecognition)
 
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
@@ -37,6 +40,3 @@ const voiceRecognition = () =>{
     recognition.start();
 }
 
-document.querySelector('.form__microphone-icon').addEventListener("click",voiceSearchModalOpen);
-document.querySelector(".voice-search__close-modal").addEventListener("click",voiceSearchModalClose);
-document.querySelector(".voice-search__microphone-border").addEventListener("click",voiceRecognition)
