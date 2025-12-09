@@ -53,7 +53,7 @@ body, ul, a {
 }
 
 .nav__profile-img {
-	width: 40px;
+	width: 41px;
 	border-radius: 23px;
 	padding: 3px;
 	margin-left: -6px;
@@ -598,6 +598,7 @@ border: none;
 		opacity: 0;
 	}
 }
+
 
 
 
