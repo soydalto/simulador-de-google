@@ -2,10 +2,30 @@
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
 
-const voiceSearchModalOpen = ()=>{
-	voiceSearch.style.display = "flex";
-	voiceSearch.style.animation = "aparecer 0.5s forwards";
-	voiceRecognition();
+const voiceSearchModalOpen = () => {
+    // Validar que el elemento existe
+    if (!voiceSearch) {
+        console.error("El elemento voiceSearch no existe");
+        return;
+    }
+    
+    // Verificar soporte del navegador
+    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        alert("Tu navegador no soporta reconocimiento de voz");
+        return;
+    }
+    
+    // Mostrar modal con animación
+    voiceSearch.style.display = "flex";
+    voiceSearch.style.animation = "aparecer 0.5s forwards";
+    
+    // Iniciar reconocimiento de voz
+    try {
+        voiceRecognition();
+    } catch (error) {
+        console.error("Error al iniciar reconocimiento de voz:", error);
+        voiceSearch.style.display = "none";
+    }
 }
 
 
