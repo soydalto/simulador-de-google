@@ -5,7 +5,7 @@ function getValue(param) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-
+//hola buenas soy franco
 let URL = getValue("url");
 let icon = document.querySelector(".icon");
 icon.src = "img/directAccess/" + URL + ".png";
