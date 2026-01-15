@@ -7,7 +7,7 @@
 
 
 body {
-	background: rgb(60,66,81);
+	background: rgb(7, 7, 7);
     }
 
 body, ul, a {
@@ -81,11 +81,11 @@ body, ul, a {
 	margin: 7px 8px;
 	width: 344px;
 	height: 450px;
-	background-color: #fff;
+	background-color: #181819;
 	border-radius: 6px;
 	padding: 20px;
 	overflow-y: scroll;
-	border: 1px solid #bbb;
+	border: 1px solid #2b2b2e;
 	text-align: center;
 	display: none;
 }
@@ -132,7 +132,7 @@ body, ul, a {
 }
 
 .nav__submenu-element p {
-	color: #444;
+	color: #ffffff;
 	font-size: 15px;
 	margin-bottom: 10px;
 	margin: 0 -8px;
@@ -147,7 +147,8 @@ body, ul, a {
 }
 
 .nav__submenu-element:hover {
-	background-color: rgba(246,250,254);
+	background-color: rgba(255, 255, 255, 0.509);
+	opacity: 0.25;
 }
 
 
@@ -190,12 +191,12 @@ body, ul, a {
 	margin: 7px 8px;
 	width: 344px;
 	height: 450px;
-	background-color: #fff;
+	background-color: #181819;
 	border-radius: 6px;
 	padding: 20px;
 	padding-bottom: 15px;
 	overflow-y: scroll;
-	border: 1px solid #bbb;
+	border: 1px solid #2b2b2e;
 	text-align: center;
 	display: none;
 }
@@ -248,14 +249,14 @@ color: #3c4043;
 
 
 .nav__submenu-profile-user-name {
-color: #202124;
+color: #fff;
 font: 500 16px/22px Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 letter-spacing: .29px;
 margin-top: 9px;
 }
 
 .nav__submenu-profile-user-mail {
-color: #5f6368;
+color: #fff;
 font: 400 14px/19px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
 
@@ -339,7 +340,7 @@ padding: 0 74px 0 12px;
 
 .politicas-de-privacidad-button,.condiciones-de-servicio-button  {
 border-radius: 4px;
-color: #5f6368;
+color: #fff;
 font: 400 12px/16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 padding: 4px 8px;
 display: block;
@@ -349,7 +350,7 @@ margin: auto;
 margin-bottom: 0;
 }
 .politicas-de-privacidad-button:hover,.condiciones-de-servicio-button:hover {
-background: rgb(244,244,244);
+background: rgba(244, 244, 244, 0.618);
 }
 
 
