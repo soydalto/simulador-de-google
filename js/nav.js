@@ -20,7 +20,6 @@ function navAction(){
 	}
 }
 
-
 function navProfileAction(){
 	if (navProfileClose == true) {
 		navProfile.style.display = "block";
@@ -34,4 +33,3 @@ function navProfileAction(){
 		navProfileClose = true;
 	}
 }
-
