@@ -1,4 +1,4 @@
-
+//agregando un comentario para no cambiar el codigo
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
 
