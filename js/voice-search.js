@@ -13,7 +13,7 @@ const voiceSearchModalClose = () =>{
 	voiceSearch.style.animation = "desaparecer 0.25s forwards";
 	setTimeout(()=>{
 	    voiceSearch.style.display = "none";
-	},250)
+		},250)
 }
 
 const voiceRecognition = () =>{
