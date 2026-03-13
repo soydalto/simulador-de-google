@@ -1,3 +1,4 @@
+aaaaaaaa
 document.querySelector(".gb_Ue").addEventListener("click",navAction);
 document.querySelector(".nav__li-submenu").addEventListener("click",navProfileAction);
 let zIndex = 20;
