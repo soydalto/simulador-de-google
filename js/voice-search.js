@@ -1,10 +1,10 @@
-
-const voiceSearch = document.querySelector(".voice-search");
+	
+const voiceSearchs = document.querySelector(".voice-search");
 let microAceptado = false;
 
 const voiceSearchModalOpen = ()=>{
-	voiceSearch.style.display = "flex";
-	voiceSearch.style.animation = "aparecer 0.5s forwards";
+	voiceSearchs.style.display = "flex";
+	voiceSearchs.style.animation = "aparecer 0.5s forwards";
 	voiceRecognition();
 }
 
