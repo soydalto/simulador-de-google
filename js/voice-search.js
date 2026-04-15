@@ -1,18 +1,16 @@
-
-const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
 
 const voiceSearchModalOpen = ()=>{
-	voiceSearch.style.display = "flex";
-	voiceSearch.style.animation = "aparecer 0.5s forwards";
+	document.querySelector(".voice-search").style.display = "flex";
+	document.querySelector(".voice-search").style.animation = "aparecer 0.5s forwards";
 	voiceRecognition();
 }
 
 
 const voiceSearchModalClose = () =>{
-	voiceSearch.style.animation = "desaparecer 0.25s forwards";
+	document.querySelector(".voice-search").style.animation = "desaparecer 0.25s forwards";
 	setTimeout(()=>{
-	    voiceSearch.style.display = "none";
+	    document.querySelector(".voice-search").style.display = "none";
 	},250)
 }
 
