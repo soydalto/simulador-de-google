@@ -1,4 +1,4 @@
-
+//  /Editando este archivo, poniendo algo porque ya dalto le mejoró todo/ 
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
 
