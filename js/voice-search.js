@@ -1,6 +1,6 @@
 
 const voiceSearch = document.querySelector(".voice-search");
-let microAceptado = false;
+let microAcept = false;
 
 const voiceSearchModalOpen = ()=>{
 	voiceSearch.style.display = "flex";
@@ -17,7 +17,7 @@ const voiceSearchModalClose = () =>{
 }
 
 const voiceRecognition = () =>{
-	if (microAceptado == false) {
+	if (microAcept == false) {
 	window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
 	if (!'SpeechRecognition' in window) {
 		alert("que pena, no podes usar la API")
