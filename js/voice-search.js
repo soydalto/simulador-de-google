@@ -2,12 +2,13 @@
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
 
+//the functions can be arrow functions.
+//I replace the repeated references
 const voiceSearchModalOpen = ()=>{
 	voiceSearch.style.display = "flex";
 	voiceSearch.style.animation = "aparecer 0.5s forwards";
 	voiceRecognition();
 }
-
 
 const voiceSearchModalClose = () =>{
 	voiceSearch.style.animation = "desaparecer 0.25s forwards";
@@ -37,6 +38,7 @@ const voiceRecognition = () =>{
     recognition.start();
 }
 
+//first, the functions must be declared.
 document.querySelector('.form__microphone-icon').addEventListener("click",voiceSearchModalOpen);
 document.querySelector(".voice-search__close-modal").addEventListener("click",voiceSearchModalClose);
 document.querySelector(".voice-search__microphone-border").addEventListener("click",voiceRecognition)
