@@ -1,4 +1,4 @@
-
+//Ya esta actualizado todo
 const voiceSearch = document.querySelector(".voice-search");
 let microAceptado = false;
 
