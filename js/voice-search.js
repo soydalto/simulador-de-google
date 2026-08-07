@@ -18,7 +18,7 @@ const voiceSearchModalClose = () =>{
 
 const voiceRecognition = () =>{
 	if (microAceptado == false) {
-	window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+		window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
 	if (!'SpeechRecognition' in window) {
 		alert("que pena, no podes usar la API")
 }  
