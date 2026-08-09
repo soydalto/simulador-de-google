@@ -23,7 +23,7 @@ const voiceRecognition = () =>{
 		alert("que pena, no podes usar la API")
 }  
 	}
-	document.querySelector(".voice-search__result-text").innerHTML = "Habla ahora";
+	document.querySelector(".voice-search__result-text").innerHTML = "Habla ahora bro";
     let recognition = new window.SpeechRecognition();
 
     recognition.onresult = (event) => {
